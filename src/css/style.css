@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jomolhari&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jomolhari";
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1229px !important;
+    margin: 0 auto !important;
+}
+
+.container-2{
+    max-width: 1329px !important;
+    margin: 0 auto !important;
+}
+
+.container-3{
+    max-width: 956px !important;
+    margin: 0 auto !important;
+}
+
+body {
+    background: #000;
+}
+
+#section-1{
+    background-image: url('./../images/intro_img.png');
+    background-size:cover;
+    height: 416px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
