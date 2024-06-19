@@ -39,3 +39,50 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.carousel-container {
+    position: relative;
+    max-width: 1229px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 94px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    cursor: pointer;
+    flex: 0 100%;
+}
+
+.carousel-item img {
+    /* width: 100%; */
+
+    /* height: auto; */
+    /* display: block; */
+    /* Ensures images behave correctly within flexbox */
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

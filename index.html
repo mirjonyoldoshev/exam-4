@@ -2,20 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FAVICON LINK -->
-    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-round-icon.png">
+    <link rel="icon"
+        href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-round-icon.png" />
 
     <!-- MAIN CSS LINK -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
 
     <!-- TAILWIND LINK -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- BOXICONS LINK -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- AXIOS LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Medium</title>
 </head>
 
@@ -24,8 +28,8 @@
     <header class="pt-[18px] sticky top-0 bg-[#000] pb-[17px] z-20">
         <div class="container">
             <nav class="flex items-center justify-between">
-                <a href="#"><img src="./src/images/logo.svg" alt="logo"></a>
-                
+                <a href="#"><img src="./src/images/logo.svg" alt="logo" /></a>
+
                 <div class="anchor-wrapper flex items-center gap-[43px] text-[#fff]">
                     <a class="font-['Inter']" href="./src/pages/login.html">Log In</a>
                     <a class="font-['Inter']" href="./src/pages/register.html">Sign up</a>
@@ -39,25 +43,22 @@
     <main>
         <!-- SECTION-1 STARTED -->
         <section id="section-1">
-
+            <!-- BU SECTION'GA BACKGROUND IMAGE QO'YILGAN -->
         </section>
         <!-- SECTION-1 ENDED -->
 
         <!-- SECTION-2 STARTED -->
-        <section id="section-2" class="mt-[37px]">
+        <section id="section-2" class="mt-[37px] mb-[52px]">
             <div class="container">
                 <h1 class="text-[46px] mb-[37px] text-[#Fff]">All articles</h1>
 
-                <div class="card-wrapper ">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="" alt="">
-                        </div>
-
-                        <div class="card-body">
-
-                        </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        
                     </div>
+
+                    <button id="prevBtn" aria-label="Previous">&#10094;</button>
+                    <button id="nextBtn" aria-label="Next">&#10095;</button>
                 </div>
             </div>
         </section>
@@ -65,5 +66,9 @@
     </main>
     <!-- MAIN SECTION ENDED -->
 </body>
+
+
+<!-- MY JS LINK -->
+<script src="./src/scripts/home.js"></script>
 
 </html>

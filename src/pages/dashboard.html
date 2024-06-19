@@ -16,6 +16,10 @@
 
     <!-- BOXICONS LINK -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AXIOS LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Dashboard</title>
 </head>
 
@@ -25,11 +29,12 @@
         <!-- SECTION-1 STARTED -->
         <section id="dashboard" class="mt-[52px]">
             <div class="container-2 flex gap-[47px]">
-                <aside class="w-[270px] flex items-center flex-col gap-[25px] pt-[21px] pl-[15px] pr-[19px] pb-[36px] h-[100vh] rounded-[31px]  bg-[#F5C147]">
+                <aside
+                    class="w-[270px] flex items-center flex-col gap-[25px] pt-[21px] pl-[15px] pr-[19px] pb-[36px] h-[100vh] rounded-[31px]  bg-[#F5C147]">
                     <h1 class="text-[30px]">Dashboard</h1>
 
                     <div class="card cursor-pointer h-[85px] mt-[5px] p-[22px] w-[236px] bg-[#fff] rounded-[22px]">
-                        <h3 class="text-[16px]">Ibrokhim Jalalov</h3>
+                        <h3 class="text-[16px]">Yo'ldoshev Mirjon</h3>
                         <small class="text-[12px] text-[#787878]">Author</small>
                     </div>
 
@@ -40,30 +45,36 @@
                 <div class="form-wrapper">
                     <h1 class="text-[30px] text-[#fff] pb-[16px] pt-[34px]">Create New Post</h1>
 
-                    <form class="border-t-[1px] border-t-[#787878] w-[1012px] py-[37px]">
-                    <label class="flex flex-col gap-[7px] mb-[25px]">
-                        <h3 class="text-[20px] text-[#fff]">Post title</h3>
-                        <input required type="text" class="h-[44px] bg-[#fff] rounded-[15px] outline-none pl-[15px]">
-                    </label>
-
-                    <div class="flex items-center gap-[58px] mb-[25px]">
-                        <label class="flex flex-col gap-[7px]">
-                            <h3 class="text-[20px] text-[#fff]">Post image</h3>
-                            <input required type="text" class="w-[593px] h-[44px] bg-[#Fff] rounded-[15px] outline-none pl-[15px]">
+                    <form class="border-t-[1px] formDashboard border-t-[#787878] w-[1012px] py-[37px]" id="submit">
+                        <label class="flex flex-col gap-[7px] mb-[25px]">
+                            <h3 class="text-[20px] text-[#fff]">Post title</h3>
+                            <input required type="text"
+                                class="h-[44px] bg-[#fff] rounded-[15px] outline-none pl-[15px]">
                         </label>
 
-                        <label class="flex flex-col gap-[7px]">
-                            <h3 class="text-[20px] text-[#fff]">Post tag</h3>
-                            <input required type="text" class="w-[365px] h-[44px] bg-[#Fff] rounded-[15px] outline-none pl-[15px]">
+                        <div class="flex items-center gap-[58px] mb-[25px]">
+                            <label class="flex flex-col gap-[7px]">
+                                <h3 class="text-[20px] text-[#fff]">Post image</h3>
+                                <input required type="text"
+                                    class="w-[593px] h-[44px] bg-[#Fff] rounded-[15px] outline-none pl-[15px]">
+                            </label>
+
+                            <label class="flex flex-col gap-[7px]">
+                                <h3 class="text-[20px] text-[#fff]">Post tag</h3>
+                                <input required type="text"
+                                    class="w-[365px] h-[44px] bg-[#Fff] rounded-[15px] outline-none pl-[15px]">
+                            </label>
+                        </div>
+
+                        <label class="flex flex-col gap-[7px] mb-[52px]">
+                            <h3 class="text-[20px] text-[#fff]">Post description</h3>
+                            <textarea required
+                                class="w-[100%] outline-none p-[15px] rounded-[15px] h-[172px]"></textarea>
                         </label>
-                    </div>
 
-                    <label class="flex flex-col gap-[7px] mb-[52px]">
-                        <h3 class="text-[20px] text-[#fff]">Post description</h3>
-                        <textarea required class="w-[100%] outline-none p-[15px] rounded-[15px] h-[172px]"></textarea>
-                    </label>
-
-                    <button type="submit" class="py-[16px] ml-[382px] px-[73px] bg-[#F5C147] rounded-[10px] hover:bg-[#f5c147d9] duration-150 active:bg-[#F5C147]">Create Post</button>
+                        <button type="submit" form="submit"
+                            class="py-[16px] ml-[382px] px-[73px] bg-[#F5C147] rounded-[10px] hover:bg-[#f5c147d9] duration-150 active:bg-[#F5C147]">Create
+                            Post</button>
                     </form>
                 </div>
             </div>
@@ -72,5 +83,8 @@
     </main>
     <!-- MAIN SECTION ENDED -->
 </body>
+
+<!-- MY JS LINK -->
+<script src="./../scripts/dashboard.js"></script>
 
 </html>
